@@ -12,7 +12,7 @@ public class LongAdder1 {
 
     private static final int NUM_INCREMENTS = 10000;
 
-    private static LongAdder adder = new LongAdder();
+    private static LongAdder adder = new LongAdder();//JAVA8的原子对象
 
     public static void main(String[] args) {
         testIncrement();

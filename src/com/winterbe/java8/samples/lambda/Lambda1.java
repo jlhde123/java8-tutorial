@@ -37,7 +37,7 @@ public class Lambda1 {
 
         List<String> names2 = Arrays.asList("peter", null, "anna", "mike", "xenia");
         names2.sort(Comparator.nullsLast(String::compareTo));
-        System.out.println(names2);
+        System.out.println("nulllast"+names2);
 
         List<String> names3 = null;
 

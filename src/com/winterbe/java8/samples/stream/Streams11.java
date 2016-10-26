@@ -19,7 +19,10 @@ public class Streams11 {
 
         @Override
         public String toString() {
-            return name;
+            return "Person{" +
+                    "name='" + name + '\'' +
+                    ", age=" + age +
+                    '}';
         }
     }
 

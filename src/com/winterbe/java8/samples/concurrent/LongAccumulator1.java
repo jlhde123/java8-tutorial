@@ -16,9 +16,8 @@ public class LongAccumulator1 {
     }
 
     private static void testAccumulate() {
-        LongBinaryOperator op = (x, y) -> 2 * x + y;
-        LongAccumulator accumulator = new LongAccumulator(op, 1L);
-
+        LongBinaryOperator op = (x, y) -> 2 * x + y;//定义一个二元操作
+        LongAccumulator accumulator = new LongAccumulator(op, 1L);//生成新二元操作对象的累加方法,初始值为1
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
         IntStream.range(0, 10)
