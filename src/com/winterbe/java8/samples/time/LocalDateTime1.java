@@ -13,8 +13,6 @@ public class LocalDateTime1 {
     public static void main(String[] args) {
 
 
-
-
         LocalDateTime sylvester = LocalDateTime.of(2014, Month.DECEMBER, 31, 23, 59, 59);
         LocalDateTime now = LocalDateTime.now();
 
